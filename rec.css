@@ -1,0 +1,228 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+
+}
+
+:root {
+    --primary: #d00023;
+    --secondary: #ecebeb;
+    --white: #fff; 
+    --black: #0b0b0b;
+
+
+}
+
+
+body {
+   background: var(--secondary);
+   padding: 50px;
+   color: var(--black);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 14px;
+}
+
+.logo{
+    width: 10%;
+}
+
+.bold {
+    font-weight: 900;
+}
+
+.light {
+    font-weight: 100;
+}
+
+
+.container {
+    background: var(--white);
+    padding: 30px;
+}
+
+.invoice-container {
+    width: 700px;
+    max-width: 100%;
+    border: 3px solid var(--primary);
+
+
+}
+
+.invoice-container .header .logo-invoice-container,
+.invoice-container .header .bill-total-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+
+
+
+}
+
+.invoice-container .header .logo-sec {
+    display: flex;
+    align-items: center;
+    
+}
+
+.invoice-container .header .logo-sec .title-container {
+    margin-left: 5px;
+
+}
+
+.invoice-container .header .logo-sec .title-container .title {
+    text-transform: uppercase;
+    font-size: 18px;
+    color: var(--primary);
+
+}
+
+.invoice-container .header .logo-sec .title-container .sub-title-light {
+    font-size: 12px;
+}
+
+.invoice-container .header .invoice-sec
+.invoice-container .header .total-container {
+    text-align: right;
+
+
+}
+
+.invoice-container .header .invoice-sec .invoice{
+    font-size: 28px;
+    color: var(--primary);
+     
+}
+
+.invoice-container .header .invoice-sec .invoice-no,
+.invoice-container .header .invoice-sec .date {
+    display: flex;
+    width: 100%;
+
+}
+
+.invoice-container .header .invoice-sec .invoice-no span:first-child,
+.invoice-container .header .invoice-sec .date span:first-child{
+    width: 70px;
+    text-align: left;
+
+}
+
+.invoice-container .header .invoice-sec .invoice-no span:last-child,
+.invoice-container .header .invoice-sec .date span:last-child {
+    width: calc(100% - 70px);
+    
+
+}
+
+.invoice-container.header .bill-total-container .name,
+.invoice-container.header .bill-total-container .price {
+    font-size: 20px;
+    color: var(--primary);
+}
+
+.invoice-container .body .main-table .table-header {
+    background: var(--primary);
+}
+    
+.invoice-container .body .main-table .table-header .row {
+    color: var(--white);
+    font-size: 18px;
+    border-bottom: 0px;
+
+}
+
+.invoice-container .body .main-table .row{
+    display: flex;
+    border-bottom: 1px solid var(--secondary);
+}
+
+.invoice-container .body .main-table .row .col {
+    padding: 10px;
+
+}
+.invoice-container .body .main-table .row .col-number{
+    width: 8%;
+}
+.invoice-container .body .main-table .row .col-des{
+    width: 45%;
+}
+.invoice-container .body .main-table .row .col-price {
+    width: 20%;
+    text-align: center;
+}
+
+.invoice-container .body .main-table .row .col-qty {
+    width: 10%;
+    text-align: center;
+}
+
+.invoice-container .body .main-table .row .col-total {
+    width: 20%;
+    text-align: right;
+}
+
+.invoice-container .body .paymethod-container {
+    display: flex;
+    justify-content: space-between; 
+    padding: 5px 0 30px;
+    align-items: flex-end;
+}
+
+.invoice-container .body .paymethod-container .grandtotal-sec {
+    width: 30%;
+}
+
+.invoice-container .body .paymethod-container .grandtotal-sec p{ 
+   display: flex;
+   width: 100%;
+   padding-bottom: 5px;
+}
+
+.invoice-container .body .paymethod-container .grandtotal-sec p span {
+    padding: 0 10px;
+}
+
+.invoice-container .body .paymethod-container .grandtotal-sec p span:first-child {
+    width: 60%;
+}
+
+.invoice-container .body .paymethod-container .grandtotal-sec p span:last-child {
+    width: 40%;
+    text-align: right;
+}
+
+.invoice-container .body .paymethod-container .grandtotal-sec p:last-child span { 
+    background: var(--secondary);
+    padding: 10px;
+    color: var(--white);
+}
+
+.btn {
+    width: 30%;
+    height: 45px;
+    text-align: center;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+   
+
+
+}
+
+
+
+
+
+
+
+
